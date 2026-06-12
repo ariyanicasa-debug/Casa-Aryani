@@ -1,0 +1,7 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="220" rx="110" fill="#14382D"/>
+  <path d="M55 137L110 54L165 137" stroke="#D8B16A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80 137H140" stroke="#D8B16A" stroke-width="9" stroke-linecap="round"/>
+  <path d="M92 156C101 148 119 148 128 156" stroke="#D8B16A" stroke-width="6" stroke-linecap="round"/>
+  <text x="110" y="188" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#F8F1E6" letter-spacing="3">CASA ARIYANI</text>
+</svg>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Ariyani | Private Tropical Villa</title>
+  <meta name="description" content="Casa Ariyani is a private tropical-modern villa near Mount Makiling with a pool, rooftop bar, warm interiors, and family-friendly spaces." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="welcome-loader" id="welcomeLoader">
+    <div class="loader-card">
+      <img src="casa-ariyani-logo.svg" alt="Casa Ariyani logo">
+      <p>Welcome to</p>
+      <h1>Casa Ariyani</h1>
+      <span class="loader-line"></span>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <a href="#home" class="brand">
+      <img src="casa-ariyani-logo.svg" alt="Casa Ariyani logo" />
+      <span>Casa Ariyani</span>
+    </a>
+
+    <button class="menu-button" id="menuButton">Menu</button>
+
+    <nav id="nav">
+      <a href="#villa">Villa</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#rates">Rates</a>
+      <a href="#availability">Availability</a>
+      <a href="#book">Book</a>
+      <a href="#contact">Contact</a>
+      <a class="owner-link" href="https://docs.google.com/forms/d/e/1FAIpQLScAdm_tGaohernFsRYWm6m351Y3u3bYgi0pz90S7XAbvtF5iA/viewform?usp=header" target="_blank" rel="noopener">Owner View</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video autoplay muted loop playsinline preload="auto" class="hero-video" id="heroVideo">
+        <source src="casa-ariyani-cover.mp4" type="video/mp4" />
+      </video>
+      <img src="hero-exterior.jpg" alt="Casa Ariyani exterior" class="hero-image" />
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <img src="casa-ariyani-logo.svg" alt="Casa Ariyani logo" />
+        <p class="eyebrow">Private Tropical Villa Near Mount Makiling</p>
+        <h1>Casa Ariyani</h1>
+        <p class="hero-copy">A warm, private staycation home with a pool, rooftop bar, resort-style interiors, and spaces made for family bonding.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#availability">Check Availability</a>
+          <a class="secondary" href="#book">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" id="villa">
+      <div>
+        <p class="label">The Villa</p>
+        <h2>Your private tropical-modern escape.</h2>
+      </div>
+      <p>
+        Casa Ariyani is designed for guests who want the comfort of a private home with the feel of a boutique resort. It is ideal for couples, families, small groups, content shoots, and intimate celebrations.
+      </p>
+    </section>
+
+
+
+    <section class="photo-slider-section" id="photos">
+
+      <div class="photo-slider" id="photoSlider">
+        <div class="slide active">
+          <img src="pool.jpg" alt="Private pool">
+          <div class="slide-caption">
+            <p class="label">Pool</p>
+            <h3>Private pool for slow afternoons</h3>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="kitchen-dining.jpg" alt="Kitchen and dining">
+          <div class="slide-caption">
+            <p class="label">Dining</p>
+            <h3>Warm dining and kitchen space</h3>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="rooftop.jpg" alt="Rooftop bar">
+          <div class="slide-caption">
+            <p class="label">Rooftop</p>
+            <h3>Open-air rooftop bar and lounge</h3>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="living.jpg" alt="Living area">
+          <div class="slide-caption">
+            <p class="label">Living</p>
+            <h3>Comfortable family lounge</h3>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="main-bedroom.jpg" alt="Main bedroom">
+          <div class="slide-caption">
+            <p class="label">Bedroom</p>
+            <h3>Warm and restful main bedroom</h3>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="bunk-room.jpg" alt="Bunk room">
+          <div class="slide-caption">
+            <p class="label">Bunk Room</p>
+            <h3>Extra space for family and groups</h3>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="bathroom.jpg" alt="Bathroom">
+          <div class="slide-caption">
+            <p class="label">Bathroom</p>
+            <h3>Clean modern bathroom finish</h3>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="hero-exterior.jpg" alt="Casa Ariyani exterior">
+          <div class="slide-caption">
+            <p class="label">Exterior</p>
+            <h3>Tropical-modern private villa</h3>
+          </div>
+        </div>
+
+        <button class="slider-btn prev" id="prevSlide" aria-label="Previous photo">‹</button>
+        <button class="slider-btn next" id="nextSlide" aria-label="Next photo">›</button>
+
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </section>
+
+
+
+    <section class="video-section section">
+      <div>
+        <p class="label">Video Tour</p>
+        <h2>Watch the Casa Ariyani preview</h2>
+        <p class="muted">Watch a preview of the villa, interiors, and guest spaces.</p>
+      </div>
+      <div class="video-frame">
+        <iframe src="https://drive.google.com/file/d/1Oz8jm7p8epyLMx509qVyAJTDsHVbWTEN/preview" allow="autoplay; encrypted-media" allowfullscreen title="Casa Ariyani video tour"></iframe>
+      </div>
+    </section>
+
+<section class="amenities section" id="amenities">
+      <div class="section-heading">
+        <p class="label">Amenities</p>
+        <h2>Everything guests need for a complete stay.</h2>
+      </div>
+
+      <div class="amenity-cards">
+        <article><img src="pool.jpg" alt="Private pool"><h3>Private Pool</h3><p>Pool area with lounge seating and tropical greenery.</p></article>
+        <article><img src="rooftop.jpg" alt="Rooftop bar"><h3>Rooftop Bar</h3><p>Open-air area for games, drinks, and sunset bonding.</p></article>
+        <article><img src="kitchen-dining.jpg" alt="Kitchen and dining"><h3>Kitchen & Dining</h3><p>Warm shared space for meals and group gatherings.</p></article>
+        <article><img src="living.jpg" alt="Living area"><h3>Living Area</h3><p>Comfortable lounge for rest, movies, and conversations.</p></article>
+        <article><img src="main-bedroom.jpg" alt="Main bedroom"><h3>Main Bedroom</h3><p>Private room with calm, warm, and modern finishes.</p></article>
+        <article><img src="bunk-room.jpg" alt="Bunk room"><h3>Bunk Room</h3><p>Extra sleeping space for families and small groups.</p></article>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="rates section" id="rates">
+      <div class="section-heading">
+        <p class="label">Rates & Packages</p>
+        <h2>Introductory promo rates.</h2>
+        <p class="muted">All packages are good for up to <strong>15 pax</strong>. Room access depends on the selected package.</p>
+      </div>
+
+      <div class="rate-cards">
+        <article>
+          <p class="rate-tag">Day Tour</p>
+          <h3><span class="old-price">₱12,000</span> ₱7,999</h3>
+          <p class="rate-time">7:00 AM to 4:00 PM | Good for 15 pax</p>
+          <ul>
+            <li>Access to pool, rooftop bar, kitchen, dining, living area, bathroom, parking area, and basketball/pickleball court</li>
+            <li>Rooms are not included</li>
+            <li>Great for family bonding and small daytime gatherings</li>
+          </ul>
+          <a href="#book" class="primary full">Request Day Tour</a>
+        </article>
+
+        <article class="featured-rate">
+          <p class="rate-tag">Overnight Stay</p>
+          <h3><span class="old-price">₱18,000</span> ₱10,999</h3>
+          <p class="rate-time">7:00 PM to 4:00 PM next day | Good for 15 pax</p>
+          <ul>
+            <li>Full access to all villa amenities</li>
+            <li>Room access included: main bedroom and bunk room</li>
+            <li>Includes basketball/pickleball court access</li>
+          </ul>
+          <a href="#book" class="primary full">Request Overnight</a>
+        </article>
+
+        <article>
+          <p class="rate-tag">Celebration Package</p>
+          <h3><span class="old-price">₱25,000</span> ₱15,999</h3>
+          <p class="rate-time">24-hour private use | Good for 15 pax</p>
+          <ul>
+            <li>Full access to all villa amenities</li>
+            <li>Room access included: main bedroom and bunk room</li>
+            <li>Includes basketball/pickleball court access</li>
+          </ul>
+          <a href="#book" class="primary full">Request Event</a>
+        </article>
+      </div>
+
+      <p class="simple-rate-note">Day Tour excludes room access. Overnight Stay and Celebration Package include room access. All packages include basketball/pickleball court access. Additional guests, holiday rates, early check-in, late check-out, and event styling may have additional charges.</p>
+    </section>
+
+
+
+
+
+
+    <section class="availability section" id="availability">
+      <div class="section-heading">
+        <p class="label">Availability</p>
+        <h2>Check available dates</h2>
+        <p class="muted">Green dates are available. Red dates are not available.</p>
+      </div>
+
+      <div class="calendar-card">
+        <div class="calendar-head">
+          <button id="prevMonth">‹</button>
+          <h3 id="calendarTitle">Month Year</h3>
+          <button id="nextMonth">›</button>
+        </div>
+        <div class="legend">
+          <span><i class="available"></i> Available</span>
+          <span><i class="booked"></i> Not available</span>
+          <span><i class="selected"></i> Selected</span>
+        </div>
+        <p class="availability-sync-note" id="availabilitySyncNote">Green dates are available. Click an available date to highlight it yellow. Dates submitted in the booking sheet will turn red/unavailable. If a row is deleted from the sheet, the date becomes available again after refresh.</p>
+        <div class="weekdays">
+          <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+    </section>
+
+
+    <section class="booking section booking-button-section" id="book">
+      <div class="booking-card-main">
+        <p class="label">Book</p>
+        <h2>Reserve your Casa Ariyani stay.</h2>
+        <p class="muted">Click the button below to open the official Casa Ariyani booking form. We will review your preferred date and contact you for confirmation.</p>
+
+        <div class="booking-highlights-simple">
+          <span>Day Tour</span>
+          <span>Overnight Stay</span>
+          <span>Celebration Package</span>
+          <span>Good for up to 15 pax</span>
+        </div>
+
+        <a class="primary booking-form-button" href="https://docs.google.com/forms/d/e/1FAIpQLScAdm_tGaohernFsRYWm6m351Y3u3bYgi0pz90S7XAbvtF5iA/viewform?usp=header" target="_blank" rel="noopener">Book Now</a>
+      </div>
+    </section>
+
+
+    <section class="contact section" id="contact">
+      <p class="label">Contact</p>
+      <h2>Message Casa Ariyani</h2>
+      <p class="muted">For inquiries, reservations, and event requests, contact us directly.</p>
+
+      <div class="contact-cards">
+        <a href="tel:+639701821572">+63 970 182 1572</a>
+        <a href="mailto:ariyanicasa@gmail.com">ariyanicasa@gmail.com</a>
+        <a href="https://www.facebook.com/profile.php?id=61590860036581" target="_blank" rel="noopener">Facebook Page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="casa-ariyani-logo.svg" alt="Casa Ariyani logo" />
+    <p>Casa Ariyani © 2026</p>
+    <p>+63 970 182 1572 | ariyanicasa@gmail.com</p>
+  </footer>
+
+  <a class="floating-contact" href="https://www.facebook.com/profile.php?id=61590860036581" target="_blank" rel="noopener">Message Us</a>
+<script src="script.js"></script>
+</body>
+</html>

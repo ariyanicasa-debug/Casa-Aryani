@@ -1,0 +1,19 @@
+CASA ARIYANI GITHUB UPLOAD CHECKLIST
+
+Upload these to your GitHub repository root:
+
+- index.html
+- styles.css
+- script.js
+- README.md
+- .nojekyll
+- assets folder
+
+Do not upload only the assets folder.
+Do not place index.html inside another folder.
+GitHub Pages needs index.html at the root.
+
+After upload:
+Settings > Pages > Deploy from branch > main > /root > Save
+
+Your site will be live after a few minutes.

@@ -1,0 +1,93 @@
+Casa Ariyani Google Sheets Auto-Block Setup
+
+This website is already coded to auto-block calendar dates from your Google Form response sheet.
+You only need to deploy the Google Apps Script, copy the Web App URL, and paste it into script.js.
+
+WHAT WILL HAPPEN
+- Guest submits the Google Form.
+- The response goes to your Google Sheet.
+- The website reads the booking dates from the Google Sheet.
+- Those dates automatically turn red / Not available on the website calendar.
+
+IMPORTANT NOTE ABOUT STATUS
+Option A: No Status column
+- Every submitted form response will block the selected date.
+
+Option B: Add a Status column in the Google Sheet
+- Only rows marked Confirmed, Booked, Paid, or Approved will block the date.
+- Pending rows will not block the date.
+- This is safer if you want to review requests first before blocking.
+
+RECOMMENDED GOOGLE FORM FIELDS
+Use these exact or similar field names:
+- Full Name
+- Contact Number
+- Email
+- Package
+- Check-in Date or Preferred Date
+- Check-out Date
+
+Optional but recommended in the Google Sheet:
+- Status
+
+STEP 1: CONNECT GOOGLE FORM TO GOOGLE SHEETS
+1. Open your Google Form.
+2. Go to Responses.
+3. Click Link to Sheets.
+4. Create or select the response spreadsheet.
+
+STEP 2: OPEN APPS SCRIPT
+1. Open the response Google Sheet.
+2. Click Extensions.
+3. Click Apps Script.
+4. Delete any sample code.
+5. Open the file included in this website folder named:
+   google-apps-script-auto-block.js
+6. Copy all code from that file.
+7. Paste it into Apps Script.
+8. Click Save.
+
+STEP 3: DEPLOY AS WEB APP
+1. Click Deploy.
+2. Click New deployment.
+3. Click Select type.
+4. Choose Web app.
+5. Description: Casa Ariyani Availability Sync
+6. Execute as: Me
+7. Who has access: Anyone
+8. Click Deploy.
+9. Copy the Web App URL.
+
+STEP 4: PASTE WEB APP URL INTO THE WEBSITE
+1. Open script.js.
+2. Find this line:
+
+   const GOOGLE_BOOKINGS_URL = "";
+
+3. Paste your Web App URL inside the quotes.
+
+Example:
+
+   const GOOGLE_BOOKINGS_URL = "https://script.google.com/macros/s/XXXXX/exec";
+
+4. Save script.js.
+5. Upload the updated website files to your hosting.
+
+STEP 5: TEST
+1. Submit a test booking through the Google Form.
+2. Open the Google Sheet and confirm the response appears.
+3. If you added a Status column, set the test row to Confirmed.
+4. Refresh the website.
+5. The submitted date should turn red / Not available.
+
+TROUBLESHOOTING
+If dates do not block:
+- Check that the Apps Script Web App URL is pasted in script.js.
+- Make sure the deployment access is set to Anyone.
+- Make sure the date question names contain words like Date, Check-in, Check-out, or Preferred Date.
+- If using a Status column, make sure the status is Confirmed, Booked, Paid, or Approved.
+- Re-deploy Apps Script after code changes.
+
+FILES UPDATED
+- script.js now supports Google Sheets auto-blocking through Apps Script JSONP.
+- google-apps-script-auto-block.js is included for your Google Sheet.

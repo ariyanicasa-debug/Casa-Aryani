@@ -1,0 +1,43 @@
+
+CASA ARIYANI AVAILABILITY SYNC
+
+This version uses your Google Sheet as the source of booked dates:
+
+https://docs.google.com/spreadsheets/d/1ypyJg6SxXsWtBkiE7-Aht16MzPaoKzqYbj8Wxty0EAw/edit?gid=1509933581
+
+How it works:
+- If a booking row exists in the sheet, that date becomes red / unavailable.
+- If you delete the row from the sheet, that date becomes available again after refreshing the website.
+- Available dates are green.
+- When a visitor clicks an available date, it becomes yellow.
+
+Important:
+For the website to read the sheet, the Google Sheet must be accessible publicly.
+
+Recommended setting:
+1. Open the Google Sheet.
+2. Click Share.
+3. Set General Access to Anyone with the link.
+4. Role can be Viewer.
+
+If it still does not load:
+1. Go to File > Share > Publish to web.
+2. Publish the response sheet.
+3. Refresh the website.
+
+Date column names:
+The website will search for columns containing these names:
+- Preferred Date
+- Check-in Date
+- Booking Date
+- Reservation Date
+- Date
+- Arrival
+
+Optional end date column:
+- Check-out Date
+- End Date
+- Departure
+
+If you use one date only, it blocks one day.
+If you use check-in and check-out, it blocks the date range.
